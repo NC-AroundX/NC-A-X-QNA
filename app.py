@@ -10,7 +10,7 @@ st.set_page_config(
 
 # Gemini API 설정
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 세부관리기준 문서 내용 (document.txt에서 로드)
 @st.cache_data
